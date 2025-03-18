@@ -4,7 +4,7 @@ CFLAGS=-I$(IDIR)
 
 ODIR=obj
 
-_DEPS = distance-node.h link-node.h
+_DEPS = distance-node.h link-node.h adj.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
 _OBJ = link-state.o distance-vector.o
@@ -21,3 +21,6 @@ project: $(OBJ)
 
 clean:
 	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~ 
+
+run: ${PROGRAM_NAME}
+		./${PROGRAM} ${ARGS}
