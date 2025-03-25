@@ -19,3 +19,4 @@ void pop_vector(distNode* node){
         node->distance_vector[i] = adj[node->router_id][i];
     }
 }
+
