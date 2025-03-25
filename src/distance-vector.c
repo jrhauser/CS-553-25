@@ -5,7 +5,7 @@
 
 void pop_vector(distNode* node);
 
-int main(void) {
+int main(void) {                      //TODO: discuss to move this code to main.c
     distNode nodes[5];
     for (int i = 0; i < MAX_TABLE_SIZE; i++) {
         nodes[i].router_id = i;
